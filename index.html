@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIX UNFORGETABLE | Applications & Educations</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="topbar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div>
+                <h2>FLIX</h2>
+                <span>UNFORGETABLE</span>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="about">About</a>
+            <a href="#" class="nav-link" data-page="services">Services</a>
+            <a href="#" class="nav-link" data-page="applications">Applications</a>
+            <a href="#" class="nav-link" data-page="education">Education</a>
+            <a href="#" class="nav-link" data-page="pricing">Pricing</a>
+            <a href="#" class="nav-link" data-page="contact">Contact</a>
+        </nav>
+
+        <button class="login-button" onclick="showPage('login')">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Login
+        </button>
+
+        <button class="menu-button" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================= MOBILE NAV ================= -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#" data-page="home">Home</a>
+        <a href="#" data-page="about">About</a>
+        <a href="#" data-page="services">Services</a>
+        <a href="#" data-page="applications">Applications</a>
+        <a href="#" data-page="education">Education</a>
+        <a href="#" data-page="pricing">Pricing</a>
+        <a href="#" data-page="contact">Contact</a>
+        <a href="#" data-page="login">Login</a>
+    </div>
+
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+
+        <!-- ==================================================
+             HOME PAGE
+        =================================================== -->
+        <section id="home" class="page active-page">
+
+            <!-- Hero -->
+            <div class="hero">
+
+                <div class="hero-content">
+                    <p class="small-title">WELCOME TO FLIX UNFORGETABLE</p>
+
+                    <h1>
+                        Applications and
+                        <span>Education</span>
+                        Made Easy
+                    </h1>
+
+                    <p class="hero-text">
+                        Your trusted platform for online applications,
+                        education opportunities and professional services.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="primary-btn"
+                                onclick="showPage('applications')">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            Start Application
+                        </button>
+
+                        <button class="secondary-btn"
+                                onclick="showPage('education')">
+                            <i class="fa-solid fa-book-open"></i>
+                            Explore Education
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="floating-card card-one">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <div>
+                            <strong>Applications</strong>
+                            <small>Apply online</small>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div>
+                            <strong>Education</strong>
+                            <small>Learn & grow</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-circle">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Features -->
+            <div class="section-title">
+                <p>WHAT WE OFFER</p>
+                <h2>Everything You Need in One Place</h2>
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon blue">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+
+                    <h3>Online Applications</h3>
+
+                    <p>
+                        Apply for opportunities and services quickly
+                        and conveniently online.
+                    </p>
+
+                    <button onclick="showPage('applications')">
+                        Explore
+                    </button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon purple">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <h3>Quality Education</h3>
+
+                    <p>
+                        Access useful courses, learning materials,
+                        and professional development.
+                    </p>
+
+                    <button onclick="showPage('education')">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+
+                    <h3>Professional Services</h3>
+
+                    <p>
+                        Get support with applications, documents,
+                        consultations and other services.
+                    </p>
+
+                    <button onclick="showPage('services')">
+                        View Services
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="stats-section">
+
+                <div class="stat-box">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>2,500+</h3>
+                    <p>Users</p>
+                </div>
+
+                <div class="stat-box">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    <h3>5,000+</h3>
+                    <p>Applications</p>
+                </div>
+
+                <div class="stat-box">
+                    <i class="fa-solid fa-book"></i>
+                    <h3>100+</h3>
+                    <p>Courses</p>
+                </div>
+
+                <div class="stat-box">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>95%</h3>
+                    <p>Success Rate</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             DASHBOARD PAGE
+        =================================================== -->
+        <section id="dashboard" class="page">
+
+            <div class="dashboard-layout">
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+
+                    <div class="dashboard-logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+                            <strong>FLIX</strong>
+                            <small>Dashboard</small>
+                        </div>
+                    </div>
+
+
+                    <div class="sidebar-menu">
+
+                        <a href="#" class="side-item active"
+                           onclick="showDashboardTab('overview')">
+                            <i class="fa-solid fa-chart-line"></i>
+                            Overview
+                        </a>
+
+                        <a href="#" class="side-item"
+                           onclick="showDashboardTab('myapplications')">
+                            <i class="fa-solid fa-file-lines"></i>
+                            My Applications
+                        </a>
+
+                        <a href="#" class="side-item"
+                           onclick="showDashboardTab('myeducation')">
+                            <i class="fa-solid fa-book-open"></i>
+                            My Education
+                        </a>
+
+                        <a href="#" class="side-item"
+                           onclick="showDashboardTab('myservices')">
+                            <i class="fa-solid fa-briefcase"></i>
+                            My Services
+                        </a>
+
+                        <a href="#" class="side-item">
+                            <i class="fa-solid fa-user"></i>
+                            Profile
+                        </a>
+
+                        <a href="#" class="side-item">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings
+                        </a>
+
+                    </div>
+
+
+                    <div class="logout">
+                        <a href="#" onclick="showPage('home')">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+                        </a>
+                    </div>
+
+                </aside>
+
+
+                <!-- Dashboard Content -->
+                <div class="dashboard-content">
+
+                    <div class="dashboard-header">
+
+                        <div>
+                            <p class="welcome-text">Welcome back, Felix 👋</p>
+                            <h1>Dashboard</h1>
+                            <p>
+                                Here's what's happening with your account today.
+                            </p>
+                        </div>
+
+                        <div class="profile">
+                            <div class="profile-avatar">F</div>
+
+                            <div>
+                                <strong>Felix</strong>
+                                <small>Student</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Overview -->
+                    <div id="overview" class="dashboard-tab active-tab">
+
+                        <div class="dashboard-cards">
+
+                            <div class="dashboard-card">
+                                <div class="dash-icon blue-bg">
+                                    <i class="fa-solid fa-file"></i>
+                                </div>
+
+                                <div>
+                                    <span>Applications</span>
+                                    <h3>5</h3>
+                                    <small>+2 this month</small>
+                                </div>
+                            </div>
+
+
+                            <div class="dashboard-card">
+                                <div class="dash-icon purple-bg">
+                                    <i class="fa-solid fa-book"></i>
+                                </div>
+
+                                <div>
+                                    <span>Courses Enrolled</span>
+                                    <h3>3</h3>
+                                    <small>2 in progress</small>
+                                </div>
+                            </div>
+
+
+                            <div class="dashboard-card">
+                                <div class="dash-icon green-bg">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+
+                                <div>
+                                    <span>Services Used</span>
+                                    <h3>2</h3>
+                                    <small>This month</small>
+                                </div>
+                            </div>
+
+
+                            <div class="dashboard-card">
+                                <div class="dash-icon orange-bg">
+                                    <i class="fa-solid fa-chart-pie"></i>
+                                </div>
+
+                                <div>
+                                    <span>Total Progress</span>
+                                    <h3>75%</h3>
+                                    <small>Good progress</small>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-grid">
+
+                            <div class="panel">
+
+                                <div class="panel-header">
+                                    <h3>Quick Actions</h3>
+                                </div>
+
+                                <div class="quick-actions">
+
+                                    <button onclick="showPage('applications')">
+                                        <i class="fa-solid fa-file-circle-plus"></i>
+                                        <strong>Apply Now</strong>
+                                        <small>Start a new application</small>
+                                    </button>
+
+                                    <button onclick="showPage('education')">
+                                        <i class="fa-solid fa-book"></i>
+                                        <strong>Browse Courses</strong>
+                                        <small>Explore education programs</small>
+                                    </button>
+
+                                    <button onclick="showPage('services')">
+                                        <i class="fa-solid fa-handshake"></i>
+                                        <strong>Our Services</strong>
+                                        <small>Get professional help</small>
+                                    </button>
+
+                                    <button onclick="showPage('pricing')">
+                                        <i class="fa-solid fa-tags"></i>
+                                        <strong>View Pricing</strong>
+                                        <small>Choose a suitable plan</small>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="panel">
+
+                                <div class="panel-header">
+                                    <h3>Recent Activity</h3>
+                                    <a href="#">View All</a>
+                                </div>
+
+                                <div class="activity-list">
+
+                                    <div class="activity">
+                                        <div class="activity-icon">
+                                            <i class="fa-solid fa-check"></i>
+                                        </div>
+
+                                        <div>
+                                            <strong>Application Submitted</strong>
+                                            <p>University Admission</p>
+                                        </div>
+
+                                        <span>Today</span>
+                                    </div>
+
+
+                                    <div class="activity">
+                                        <div class="activity-icon">
+                                            <i class="fa-solid fa-book"></i>
+                                        </div>
+
+                                        <div>
+                                            <strong>Course Enrolled</strong>
+                                            <p>Web Development</p>
+                                        </div>
+
+                                        <span>2 days ago</span>
+                                    </div>
+
+
+                                    <div class="activity">
+                                        <div class="activity-icon">
+                                            <i class="fa-solid fa-file-circle-check"></i>
+                                        </div>
+
+                                        <div>
+                                            <strong>Service Completed</strong>
+                                            <p>Document Processing</p>
+                                        </div>
+
+                                        <span>5 days ago</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- My Applications -->
+                    <div id="myapplications" class="dashboard-tab">
+
+                        <div class="panel">
+
+                            <div class="panel-header">
+                                <h3>My Applications</h3>
+
+                                <button class="small-primary"
+                                        onclick="showPage('applications')">
+                                    New Application
+                                </button>
+                            </div>
+
+                            <div class="application-table">
+
+                                <div class="table-row table-header">
+                                    <span>Application</span>
+                                    <span>Date</span>
+                                    <span>Status</span>
+                                </div>
+
+                                <div class="table-row">
+                                    <span>University Admission</span>
+                                    <span>May 10</span>
+                                    <span class="status pending">Pending</span>
+                                </div>
+
+                                <div class="table-row">
+                                    <span>Scholarship Application</span>
+                                    <span>May 5</span>
+                                    <span class="status approved">Approved</span>
+                                </div>
+
+                                <div class="table-row">
+                                    <span>Job Application</span>
+                                    <span>April 28</span>
+                                    <span class="status review">Under Review</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- My Education -->
+                    <div id="myeducation" class="dashboard-tab">
+
+                        <div class="panel">
+
+                            <div class="panel-header">
+                                <h3>My Education</h3>
+                            </div>
+
+                            <div class="course-progress">
+
+                                <div class="course-row">
+                                    <div>
+                                        <h4>Web Development</h4>
+                                        <p>Frontend Development</p>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div style="width: 80%"></div>
+                                    </div>
+
+                                    <span>80%</span>
+                                </div>
+
+
+                                <div class="course-row">
+                                    <div>
+                                        <h4>Data Science</h4>
+                                        <p>Introduction to Data</p>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div style="width: 55%"></div>
+                                    </div>
+
+                                    <span>55%</span>
+                                </div>
+
+
+                                <div class="course-row">
+                                    <div>
+                                        <h4>Digital Marketing</h4>
+                                        <p>Marketing Fundamentals</p>
+                                    </div>
+
+                                    <div class="progress">
+                                        <div style="width: 90%"></div>
+                                    </div>
+
+                                    <span>90%</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- My Services -->
+                    <div id="myservices" class="dashboard-tab">
+
+                        <div class="panel">
+
+                            <div class="panel-header">
+                                <h3>My Services</h3>
+                            </div>
+
+                            <div class="service-history">
+
+                                <div class="history-item">
+                                    <i class="fa-solid fa-file"></i>
+                                    <div>
+                                        <strong>Document Processing</strong>
+                                        <p>Completed successfully</p>
+                                    </div>
+
+                                    <span class="status approved">
+                                        Completed
+                                    </span>
+                                </div>
+
+
+                                <div class="history-item">
+                                    <i class="fa-solid fa-comments"></i>
+                                    <div>
+                                        <strong>Career Consultation</strong>
+                                        <p>Scheduled for next week</p>
+                                    </div>
+
+                                    <span class="status pending">
+                                        Scheduled
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             ABOUT PAGE
+        =================================================== -->
+        <section id="about" class="page">
+
+            <div class="inner-page">
+
+                <div class="page-heading">
+                    <p>ABOUT US</p>
+                    <h1>About FLIX UNFORGETABLE</h1>
+                    <span>
+                        Innovation in Applications and Education
+                    </span>
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div>
+                        <h2>Who We Are</h2>
+
+                        <p>
+                            FLIX UNFORGETABLE is a modern platform designed
+                            to make applications, education and professional
+                            services easier and more accessible.
+                        </p>
+
+                        <p>
+                            Our goal is to bring useful opportunities together
+                            in one convenient digital environment.
+                        </p>
+
+                        <div class="about-points">
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Easy online applications
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Accessible education
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-circle-check"></i>
+                                Professional support
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-visual">
+
+                        <div class="about-main-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h3>FLIX UNFORGETABLE</h3>
+                        <p>Applications & Educations</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mission-grid">
+
+                    <div class="mission-card">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To simplify access to applications,
+                            education and professional opportunities.
+                        </p>
+                    </div>
+
+                    <div class="mission-card">
+                        <i class="fa-solid fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>
+                            To become a trusted digital platform for
+                            learning and opportunity access.
+                        </p>
+                    </div>
+
+                    <div class="mission-card">
+                        <i class="fa-solid fa-heart"></i>
+                        <h3>Our Values</h3>
+                        <p>
+                            Accessibility, innovation, reliability
+                            and customer satisfaction.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             SERVICES PAGE
+        =================================================== -->
+        <section id="services" class="page">
+
+            <div class="inner-page">
+
+                <div class="page-heading">
+                    <p>OUR SERVICES</p>
+                    <h1>Professional Services</h1>
+                    <span>
+                        Fast, reliable and convenient support
+                    </span>
+                </div>
+
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+
+                        <h3>Application Support</h3>
+
+                        <p>
+                            Get assistance preparing and submitting
+                            online applications.
+                        </p>
+
+                        <button class="outline-btn">
+                            Learn More
+                        </button>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+
+                        <h3>Consultation</h3>
+
+                        <p>
+                            Get professional advice for education,
+                            career and applications.
+                        </p>
+
+                        <button class="outline-btn">
+                            Learn More
+                        </button>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <h3>Technical Support</h3>
+
+                        <p>
+                            Receive help with online services and
+                            digital application issues.
+                        </p>
+
+                        <button class="outline-btn">
+                            Learn More
+                        </button>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+
+                        <h3>Career Guidance</h3>
+
+                        <p>
+                            Explore your options with career guidance
+                            and planning support.
+                        </p>
+
+                        <button class="outline-btn">
+                            Learn More
+                        </button>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-file-circle-check"></i>
+                        </div>
+
+                        <h3>Document Processing</h3>
+
+                        <p>
+                            Get support with preparing and processing
+                            important documents.
+                        </p>
+
+                        <button class="outline-btn">
+                            Learn More
+                        </button>
+                    </div>
+
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <h3>Other Services</h3>
+
+                        <p>
+                            Discover additional professional services
+                            available through our platform.
+                        </p>
+
+                        <button class="outline-btn">
+                            Learn More
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             APPLICATIONS PAGE
+        =================================================== -->
+        <section id="applications" class="page">
+
+            <div class="inner-page">
+
+                <div class="page-heading">
+                    <p>ONLINE APPLICATIONS</p>
+                    <h1>Apply Online</h1>
+                    <span>
+                        Find opportunities and submit applications easily.
+                    </span>
+                </div>
+
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text"
+                           id="applicationSearch"
+                           placeholder="Search for an application..."
+                           onkeyup="filterApplications()">
+                </div>
+
+
+                <div class="applications-grid" id="applicationsGrid">
+
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+
+                        <h3>University Admission</h3>
+
+                        <p>
+                            Apply to universities and higher education programs.
+                        </p>
+
+                        <button onclick="applyNow('University Admission')">
+                            Apply Now
+                        </button>
+                    </div>
+
+
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <h3>Job Application</h3>
+
+                        <p>
+                            Find opportunities and submit job applications.
+                        </p>
+
+                        <button onclick="applyNow('Job Application')">
+                            Apply Now
+                        </button>
+                    </div>
+
+
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h3>Scholarship Application</h3>
+
+                        <p>
+                            Discover scholarship opportunities for education.
+                        </p>
+
+                        <button onclick="applyNow('Scholarship Application')">
+                            Apply Now
+                        </button>
+                    </div>
+
+
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h3>Business Registration</h3>
+
+                        <p>
+                            Get support starting and registering your business.
+                        </p>
+
+                        <button onclick="applyNow('Business Registration')">
+                            Apply Now
+                        </button>
+                    </div>
+
+
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+
+                        <h3>Certificate Request</h3>
+
+                        <p>
+                            Request certificates and other official documents.
+                        </p>
+
+                        <button onclick="applyNow('Certificate Request')">
+                            Apply Now
+                        </button>
+                    </div>
+
+
+                    <div class="application-card">
+                        <div class="application-icon">
+                            <i class="fa-solid fa-folder-open"></i>
+                        </div>
+
+                        <h3>Other Applications</h3>
+
+                        <p>
+                            Explore additional applications and opportunities.
+                        </p>
+
+                        <button onclick="applyNow('Other Application')">
+                            Apply Now
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             EDUCATION PAGE
+        =================================================== -->
+        <section id="education" class="page">
+
+            <div class="inner-page">
+
+                <div class="page-heading">
+                    <p>QUALITY EDUCATION</p>
+                    <h1>Learn for a Better Tomorrow</h1>
+                    <span>
+                        Build your skills and advance your career.
+                    </span>
+                </div>
+
+
+                <div class="education-banner">
+
+                    <div>
+                        <h2>Grow Your Skills</h2>
+
+                        <p>
+                            Access practical learning opportunities
+                            designed for students and professionals.
+                        </p>
+
+                        <button class="primary-btn">
+                            Start Learning
+                        </button>
+                    </div>
+
+                    <div class="education-symbol">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                </div>
+
+
+                <h2 class="subheading">Popular Courses</h2>
+
+
+                <div class="courses-grid">
+
+                    <div class="course-card">
+                        <div class="course-top blue-course">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <div class="course-content">
+                            <span>Technology</span>
+                            <h3>Web Development</h3>
+                            <p>
+                                Learn modern HTML, CSS, JavaScript
+                                and frontend development.
+                            </p>
+
+                            <button onclick="showMessage('Course enrolled successfully!')">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card">
+                        <div class="course-top purple-course">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+
+                        <div class="course-content">
+                            <span>Technology</span>
+                            <h3>Data Science</h3>
+                            <p>
+                                Learn data analysis and essential
+                                data science concepts.
+                            </p>
+
+                            <button onclick="showMessage('Course enrolled successfully!')">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card">
+                        <div class="course-top green-course">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+
+                        <div class="course-content">
+                            <span>Creative</span>
+                            <h3>Graphic Design</h3>
+                            <p>
+                                Build your design skills and create
+                                professional visual content.
+                            </p>
+
+                            <button onclick="showMessage('Course enrolled successfully!')">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="course-card">
+                        <div class="course-top orange-course">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+
+                        <div class="course-content">
+                            <span>Business</span>
+                            <h3>Digital Marketing</h3>
+                            <p>
+                                Learn how to grow businesses using
+                                digital marketing.
+                            </p>
+
+                            <button onclick="showMessage('Course enrolled successfully!')">
+                                Enroll Now
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PRICING PAGE
+        =================================================== -->
+        <section id="pricing" class="page">
+
+            <div class="inner-page">
+
+                <div class="page-heading">
+                    <p>PRICING</p>
+                    <h1>Simple & Transparent Pricing</h1>
+                    <span>
+                        Choose a plan that fits your needs.
+                    </span>
+                </div>
+
+
+                <div class="pricing-grid">
+
+                    <!-- FREE -->
+                    <div class="price-card">
+
+                        <div class="plan-name">Free</div>
+
+                        <h2>$0<span>/month</span></h2>
+
+                        <p class="plan-description">
+                            For getting started
+                        </p>
+
+                        <div class="features">
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Basic access
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Limited courses
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Community support
+                            </div>
+                        </div>
+
+                        <button class="price-btn"
+                                onclick="showMessage('Free plan selected')">
+                            Get Started
+                        </button>
+
+                    </div>
+
+
+                    <!-- STANDARD -->
+                    <div class="price-card popular">
+
+                        <div class="popular-label">MOST POPULAR</div>
+
+                        <div class="plan-name">Standard</div>
+
+                        <h2>$9.99<span>/month</span></h2>
+
+                        <p class="plan-description">
+                            For active users
+                        </p>
+
+                        <div class="features">
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Full course access
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Application support
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Priority support
+                            </div>
+                        </div>
+
+                        <button class="price-btn"
+                                onclick="showMessage('Standard plan selected')">
+                            Get Started
+                        </button>
+
+                    </div>
+
+
+                    <!-- PREMIUM -->
+                    <div class="price-card">
+
+                        <div class="plan-name">Premium</div>
+
+                        <h2>$19.99<span>/month</span></h2>
+
+                        <p class="plan-description">
+                            For professionals
+                        </p>
+
+                        <div class="features">
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                All standard features
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Advanced courses
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                One-on-one consultation
+                            </div>
+                        </div>
+
+                        <button class="price-btn"
+                                onclick="showMessage('Premium plan selected')">
+                            Get Started
+                        </button>
+
+                    </div>
+
+
+                    <!-- ENTERPRISE -->
+                    <div class="price-card">
+
+                        <div class="plan-name">Enterprise</div>
+
+                        <h2>$49.99<span>/month</span></h2>
+
+                        <p class="plan-description">
+                            For organizations
+                        </p>
+
+                        <div class="features">
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                All premium features
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Dedicated manager
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-check"></i>
+                                Custom solutions
+                            </div>
+                        </div>
+
+                        <button class="price-btn"
+                                onclick="showMessage('Enterprise plan selected')">
+                            Get Started
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CONTACT PAGE
+        =================================================== -->
+        <section id="contact" class="page">
+
+            <div class="inner-page">
+
+                <div class="page-heading">
+                    <p>CONTACT US</p>
+                    <h1>Get in Touch</h1>
+                    <span>
+                        We're here to help.
+                    </span>
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-information">
+
+                        <h2>Let's Talk</h2>
+
+                        <p>
+                            Send us a message and our team will get
+                            back to you as soon as possible.
+                        </p>
+
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <strong>niyonzimafelix52@gmail.com</strong>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+
+                            <div>
+                                <span>Phone</span>
+                                <strong>+250 793 475 456</strong>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>Location</span>
+                                <strong>Kigali, Rwanda</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <form class="contact-form"
+                          onsubmit="sendMessage(event)">
+
+                        <label>Full Name</label>
+                        <input type="text"
+                               id="name"
+                               placeholder="Your name"
+                               required>
+
+
+                        <label>Email Address</label>
+                        <input type="email"
+                               id="email"
+                               placeholder="Your email"
+                               required>
+
+
+                        <label>Message</label>
+                        <textarea id="message"
+                                  rows="6"
+                                  placeholder="Your message"
+                                  required></textarea>
+
+
+                        <button type="submit" class="primary-btn full-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             LOGIN PAGE
+        =================================================== -->
+        <section id="login" class="page login-page">
+
+            <div class="login-container">
+
+                <div class="login-left">
+
+                    <div class="big-logo">
+                        <div class="logo-icon large">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h1>FLIX</h1>
+                        <p>UNFORGETABLE</p>
+                    </div>
+
+                    <h2>Welcome Back!</h2>
+
+                    <p>
+                        Login to access your dashboard,
+                        applications and education.
+                    </p>
+
+                    <div class="login-decoration">
+                        <i class="fa-solid fa-laptop"></i>
+                        <i class="fa-solid fa-book"></i>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="login-right">
+
+                    <h2>Login</h2>
+
+                    <p class="login-subtitle">
+                        Enter your credentials to continue.
+                    </p>
+
+
+                    <form onsubmit="loginUser(event)">
+
+                        <label>Email Address</label>
+
+                        <div class="input-group">
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input type="email"
+                                   id="loginEmail"
+                                   placeholder="you@example.com"
+                                   required>
+                        </div>
+
+
+                        <label>Password</label>
+
+                        <div class="input-group">
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input type="password"
+                                   id="loginPassword"
+                                   placeholder="Enter password"
+                                   required>
+
+                            <i class="fa-solid fa-eye"
+                               onclick="togglePassword()"
+                               id="eyeIcon"></i>
+                        </div>
+
+
+                        <div class="login-options">
+
+                            <label class="remember">
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+
+                            <a href="#">Forgot password?</a>
+
+                        </div>
+
+
+                        <button class="primary-btn full-btn"
+                                type="submit">
+                            Login
+                        </button>
+
+
+                        <p class="signup">
+                            Don't have an account?
+                            <a href="#" onclick="showMessage('Sign up page coming soon')">
+                                Sign up
+                            </a>
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div>
+            <strong>FLIX UNFORGETABLE</strong>
+            <p>Applications & Educations</p>
+        </div>
+
+        <p>
+            © 2026 FLIX UNFORGETABLE. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Message Popup -->
+    <div id="messageBox" class="message-box">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="messageText">Success</span>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
